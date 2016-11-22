@@ -1,0 +1,14 @@
+
+                         Installation Notes for the
+                           CIFOBJ - Class Library
+                               cifobj-common      
+
+                                Release 4.00
+
+The 4.00 version of CIFOBJ is being distributed as several source libraries
+with example programs. This file contains instructions for installing the 
+cifobj-common library and its sample programs. This library must be installed
+before cifobj-loader or cifobj are installed.  These can be obtained from 
+ftp://ndbserver.rutgers.edu/pubs/programs.
+
+
