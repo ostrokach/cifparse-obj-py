@@ -31,7 +31,7 @@ LINK_METHOD = -shared
 #----------------------------------------------------------------------------
 # LINCLUDES and LDEFINES are appended to CFLAGS and C++FLAGS
 #----------------------------------------------------------------------------
-LDEFINES  = 
+LDEFINES  = -Wno-unused-local-typedefs 
 LINCLUDES = -I$(L_INCL_DIR) -I$(M_INCL_DIR) $(EXT_INCLS_DIRS)
 
 #----------------------------------------------------------------------------

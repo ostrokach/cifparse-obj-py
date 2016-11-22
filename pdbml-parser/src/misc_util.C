@@ -4,6 +4,7 @@
 #include "CifString.h"
 #include "ISTable.h"
 #include "misc_util.h"
+#include "unistd.h"
 
 
 using std::ofstream;

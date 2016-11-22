@@ -19,7 +19,9 @@ else
     DispInfo="Making"
 fi
 
-shift
+if [ "$#" -gt 0 ]; then
+    shift
+fi
 
 cd ..
 ModFile=./local/modules.txt

@@ -1,5 +1,6 @@
 # Top level Makefile
 
+TOP_INSTALL_DIR = /usr
 UTIL_LOC = https://svn-dev.wwpdb.org/svn-rcsb/build/util
 UTIL_MODULE = util
 CHECKOUT_SCRIPT = checkout.sh
@@ -86,14 +87,14 @@ compile_lnx_41:
 compile_wwpdb_py27:
 	@sh -c 'cd ./$(UTIL_MODULE); \
         export PIC=-fPIC; \
-        export WWPDB_PYTHON_INC=$(TOP_INSTALL_DIR)/include/python2.7; \
-	export WWPDB_PYTHON_LIB_DIR=$(TOP_INSTALL_DIR)/lib; \
+        export WWPDB_PYTHON_INC=/usr/include/python2.7; \
+	export WWPDB_PYTHON_LIB_DIR=/usr/lib; \
         export WWPDB_PYTHON_LIB=python2.7; \
-        export WWPDB_BOOST_INC=$(TOP_INSTALL_DIR)/include; \
-        export WWPDB_BOOST_PYTHON_LIB_DIR=$(TOP_INSTALL_DIR)/lib; \
-        export WWPDB_BOOST_PYTHON_LIB=boost_python-mt; \
-        export WWPDB_XERCESC_INC=$(TOP_INSTALL_DIR)/include; \
-        export WWPDB_XERCESC_LIB_DIR=$(TOP_INSTALL_DIR)/lib; \
+        export WWPDB_BOOST_INC=/usr/include; \
+        export WWPDB_BOOST_PYTHON_LIB_DIR=/usr/lib/x86_64-linux-gnu/lib; \
+        export WWPDB_BOOST_PYTHON_LIB=boost_python-py27; \
+        export WWPDB_XERCESC_INC=/usr/include; \
+        export WWPDB_XERCESC_LIB_DIR=/usr/lib; \
         export WWPDB_XERCESC_LIB=xerces-c; \
         ./$(COMPILE_SCRIPT)'
 
